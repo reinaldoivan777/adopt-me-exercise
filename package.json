@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier \"src/**/*.{js,html}\" --write",
+    "lint": "eslint \"src/**/*.{js,jsx}\"",
+    "dev": "parcel src/index.html"
   },
   "repository": {
     "type": "git",
@@ -16,5 +19,15 @@
   "bugs": {
     "url": "https://github.com/reinaldoivan777/adopt-me-exercise/issues"
   },
-  "homepage": "https://github.com/reinaldoivan777/adopt-me-exercise#readme"
+  "homepage": "https://github.com/reinaldoivan777/adopt-me-exercise#readme",
+  "devDependencies": {
+    "eslint": "^6.2.0",
+    "eslint-config-prettier": "^6.0.0",
+    "parcel-bundler": "^1.12.3",
+    "prettier": "^1.18.2"
+  },
+  "dependencies": {
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
+  }
 }
